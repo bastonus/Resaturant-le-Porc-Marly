@@ -34,31 +34,36 @@ function initMobileNav() {
     
     if (!menuBtn || !navLinks) return;
     
+    // Créer les éléments d'icône pour permettre une meilleure animation
+    if (menuBtn.querySelector('i')) {
+        const existingIcon = menuBtn.querySelector('i');
+        const iconClasses = existingIcon.className.split(' ');
+        
+        // Remplacer l'icône unique par deux icônes pour l'animation
+        menuBtn.innerHTML = `
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        `;
+    }
+    
     // S'assurer que le menu soit fermé par défaut en mobile
     if (window.innerWidth <= 768) {
         navLinks.classList.remove('active');
         
         // S'assurer que l'icône est correcte
-        const icon = menuBtn.querySelector('i');
-        if (icon) {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
+        const barsIcon = menuBtn.querySelector('.fa-bars');
+        const timesIcon = menuBtn.querySelector('.fa-times');
+        
+        if (barsIcon && timesIcon) {
+            barsIcon.style.opacity = '1';
+            timesIcon.style.opacity = '0';
         }
     }
     
-    menuBtn.addEventListener('click', function() {
+    menuBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); // Empêcher la propagation pour éviter les conflits
         navLinks.classList.toggle('active');
         this.classList.toggle('active');
-        
-        // Changer l'icône du bouton
-        const icon = this.querySelector('i');
-        if (icon.classList.contains('fa-bars')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
     });
     
     // Fermer le menu quand on clique sur un lien
@@ -69,28 +74,23 @@ function initMobileNav() {
             if (window.getComputedStyle(menuBtn).display !== 'none') {
                 navLinks.classList.remove('active');
                 menuBtn.classList.remove('active');
-                
-                // Réinitialiser l'icône
-                const icon = menuBtn.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
             }
         });
     });
     
     // Fermer le menu quand on clique en dehors
     document.addEventListener('click', function(event) {
-        if (!menuBtn.contains(event.target) && !navLinks.contains(event.target) && navLinks.classList.contains('active')) {
+        if (navLinks.classList.contains('active') && 
+            !menuBtn.contains(event.target) && 
+            !navLinks.contains(event.target)) {
             navLinks.classList.remove('active');
             menuBtn.classList.remove('active');
-            
-            // Réinitialiser l'icône
-            const icon = menuBtn.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
         }
+    });
+    
+    // Empêcher la fermeture lors d'un clic dans le menu
+    navLinks.addEventListener('click', function(e) {
+        e.stopPropagation();
     });
     
     // Gérer le redimensionnement de la fenêtre
@@ -99,13 +99,6 @@ function initMobileNav() {
             // Si on repasse en desktop et que le menu mobile est ouvert, on le ferme
             navLinks.classList.remove('active');
             menuBtn.classList.remove('active');
-            
-            // Réinitialiser l'icône
-            const icon = menuBtn.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
         }
     });
 }
