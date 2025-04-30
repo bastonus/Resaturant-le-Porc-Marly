@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Cave - Le Porc Marly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f5029231c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Le Porc Marly</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="cave.html" class="active">Notre Cave</a>
+                <a href="gallerie.html">Galerie</a>
+                <a href="contact.html">Contact</a>
+                <a href="reservation.html" class="btn-reservation">Réserver</a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- En-tête de page -->
+    <header class="page-header wine-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Notre Cave</h1>
+            <p>Découvrez notre sélection de plus de 200 références</p>
+        </div>
+    </header>
+    
+    <!-- Introduction -->
+    <section class="wine-intro section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Une cave de caractère</h2>
+                <div class="separator"></div>
+                <p>Bistrot Beaujolais & Spécialiste des vins de Bourgogne</p>
+            </div>
+            
+            <div class="wine-intro-content">
+                <div class="wine-intro-text">
+                    <p>Labellisé "Bistrot Beaujolais", Le Porc Marly vous propose une cave exceptionnelle de plus de 200 références, sélectionnées avec passion par notre sommelier. Spécialistes des vins de Bourgogne, nous avons à cœur de vous faire découvrir des domaines de caractère et des cuvées d'exception.</p>
+                    <p>Notre philosophie est simple : proposer des vins authentiques, issus de vignerons passionnés qui respectent leur terroir. Chaque bouteille raconte une histoire, que nous nous ferons un plaisir de partager avec vous.</p>
+                    <p>Que vous soyez amateur éclairé ou simple curieux, notre équipe saura vous conseiller pour trouver le vin qui accompagnera parfaitement votre repas.</p>
+                </div>
+                <div class="wine-intro-image">
+                    <img src="images/wine_cellar.jpg" alt="La cave du Porc Marly">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vins par catégorie -->
+    <section class="wine-categories section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Sélection</h2>
+                <div class="separator"></div>
+                <p>Des vins choisis avec passion et expertise</p>
+            </div>
+            
+            <!-- Onglets -->
+            <div class="tabs wine-tabs">
+                <button class="tab-btn active" data-id="rouges">Vins Rouges</button>
+                <button class="tab-btn" data-id="blancs">Vins Blancs</button>
+                <button class="tab-btn" data-id="roses">Vins Rosés</button>
+                <button class="tab-btn" data-id="champagnes">Champagnes</button>
+                <button class="tab-btn" data-id="digestifs">Digestifs</button>
+            </div>
+            
+            <!-- Contenu des onglets -->
+            <!-- Vins Rouges -->
+            <div class="wine-content active" id="rouges">
+                <div class="wine-region">
+                    <h3>Bourgogne</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Gevrey-Chambertin 2019</h4>
+                                <span class="wine-domain">Domaine Drouhin-Laroze</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>78€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un vin complexe aux arômes de fruits rouges et d'épices. Tanins soyeux, finale longue et élégante.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Nuits-Saint-Georges 1er Cru "Les Vaucrains" 2018</h4>
+                                <span class="wine-domain">Domaine Henri Gouges</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>95€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Puissant et structuré, ce vin dévoile des notes de cassis, de mûre et une touche de réglisse.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Pommard 2020</h4>
+                                <span class="wine-domain">Domaine de Courcel</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>65€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Vin charpenté et généreux, aux arômes de cerise noire et de sous-bois. Belle expression du terroir de Pommard.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wine-region">
+                    <h3>Beaujolais</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Morgon "Côte du Py" 2021</h4>
+                                <span class="wine-domain">Jean Foillard</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>42€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un grand cru du Beaujolais, vinifié en agriculture biologique. Notes de cerises mûres et de violette, tannins délicats.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Fleurie "La Madone" 2020</h4>
+                                <span class="wine-domain">Domaine Métrat</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>35€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Vin délicat et floral, comme son nom l'indique. Arômes de fruits rouges frais et touche épicée en finale.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Moulin-à-Vent "Vieilles Vignes" 2019</h4>
+                                <span class="wine-domain">Domaine du Vissoux</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>39€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Issu de vignes de plus de 65 ans, ce vin concentré offre des arômes de fruits noirs, d'épices et une belle structure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wine-region">
+                    <h3>Côtes du Rhône</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Châteauneuf-du-Pape 2018</h4>
+                                <span class="wine-domain">Domaine du Vieux Télégraphe</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>85€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Vin puissant et complexe, aux arômes de fruits noirs confiturés, d'herbes de Provence et de cuir.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Côte-Rôtie "La Landonne" 2017</h4>
+                                <span class="wine-domain">Domaine Guigal</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>195€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un vin d'exception, issu d'un des meilleurs terroirs de l'appellation. Notes de fruits noirs, d'épices, de violette et une touche fumée.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vins Blancs -->
+            <div class="wine-content" id="blancs">
+                <div class="wine-region">
+                    <h3>Bourgogne</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Chablis 1er Cru "Montée de Tonnerre" 2020</h4>
+                                <span class="wine-domain">Domaine William Fèvre</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>68€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un vin minéral et tendu, aux notes d'agrumes, de fleurs blanches et de cette belle minéralité typique de Chablis.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Meursault "Les Narvaux" 2019</h4>
+                                <span class="wine-domain">Domaine Vincent Bouzereau</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>85€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un blanc riche et onctueux, aux arômes de fruits à chair blanche, de noisette grillée et de beurre frais.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Puligny-Montrachet 1er Cru "Les Folatières" 2018</h4>
+                                <span class="wine-domain">Domaine Leflaive</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>180€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Une référence mondiale, vin d'une finesse et d'une précision remarquables. Notes d'acacia, de pêche blanche et de pierre à fusil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wine-region">
+                    <h3>Loire</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Sancerre "Les Monts Damnés" 2021</h4>
+                                <span class="wine-domain">Domaine Vacheron</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>45€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Issu d'une parcelle emblématique, ce vin offre une belle tension, des arômes d'agrumes et une minéralité prononcée.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Vouvray Sec 2020</h4>
+                                <span class="wine-domain">Domaine Huet</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>42€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un chenin blanc expressif aux notes de pomme verte, de miel et de coing, porté par une belle fraîcheur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wine-region">
+                    <h3>Alsace</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Riesling Grand Cru "Schlossberg" 2018</h4>
+                                <span class="wine-domain">Domaine Trimbach</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>65€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un riesling sec d'une grande pureté, aux arômes de citron confit, de fleurs blanches et de pierre à fusil.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Gewurztraminer "Vendanges Tardives" 2017</h4>
+                                <span class="wine-domain">Domaine Zind-Humbrecht</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>72€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Vin moelleux aux arômes exotiques de litchi, de rose, d'épices douces et de miel. Une belle fraîcheur équilibre sa richesse.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vins Rosés -->
+            <div class="wine-content" id="roses">
+                <div class="wine-region">
+                    <h3>Provence</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Côtes de Provence "Whispering Angel" 2022</h4>
+                                <span class="wine-domain">Château d'Esclans</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>38€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un rosé pâle et élégant, aux notes de pêche blanche, de fraise des bois et d'agrumes. Frais et délicat.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Bandol Rosé 2021</h4>
+                                <span class="wine-domain">Domaine Tempier</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>45€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Référence de l'appellation, ce rosé de gastronomie offre des arômes de fruits rouges, d'agrumes et d'herbes de Provence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wine-region">
+                    <h3>Loire</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Sancerre Rosé 2022</h4>
+                                <span class="wine-domain">Domaine Vacheron</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>35€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un rosé de pinot noir frais et élégant, aux arômes de framboise, de groseille et de fleurs blanches.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Champagnes -->
+            <div class="wine-content" id="champagnes">
+                <div class="wine-region">
+                    <h3>Grandes Maisons</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Brut Réserve</h4>
+                                <span class="wine-domain">Bollinger</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>85€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un champagne puissant et structuré, aux arômes de fruits mûrs, de brioche et de noisette.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Cuvée Dom Pérignon 2012</h4>
+                                <span class="wine-domain">Moët & Chandon</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>230€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un millésime d'exception, offrant des arômes complexes d'agrumes confits, de fleurs blanches et de pain grillé.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wine-region">
+                    <h3>Vignerons Indépendants</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Blanc de Blancs Grand Cru</h4>
+                                <span class="wine-domain">Pierre Péters</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>92€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un champagne d'une grande finesse, aux arômes d'agrumes, de fleurs blanches et de craie. Belle minéralité en finale.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Rosé de Saignée</h4>
+                                <span class="wine-domain">Cédric Bouchard</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>110€</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un champagne rosé produit par macération, offrant des arômes intenses de fruits rouges, d'épices et une belle structure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Digestifs -->
+            <div class="wine-content" id="digestifs">
+                <div class="wine-region">
+                    <h3>Chartreuses</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Chartreuse Verte</h4>
+                                <span class="wine-domain">Distillerie des Pères Chartreux</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>10€ (verre)</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Liqueur emblématique aux 130 plantes, puissante (55°) et complexe, aux notes herbacées et mentholées.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Chartreuse Jaune</h4>
+                                <span class="wine-domain">Distillerie des Pères Chartreux</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>10€ (verre)</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Plus douce que sa soeur verte, la chartreuse jaune (40°) offre des notes miellées, d'épices et d'agrumes confits.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Chartreuse V.E.P. Verte</h4>
+                                <span class="wine-domain">Distillerie des Pères Chartreux</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>18€ (verre)</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Version d'exception vieillie en fûts de chêne, d'une grande complexité aromatique et d'une longueur exceptionnelle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wine-region">
+                    <h3>Eaux-de-vie</h3>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Cognac X.O</h4>
+                                <span class="wine-domain">Maison Delamain</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>15€ (verre)</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Un cognac d'exception, aux arômes de fruits confits, d'épices, de noix et de bois précieux.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Armagnac Hors d'Âge</h4>
+                                <span class="wine-domain">Domaine Boingnères</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>14€ (verre)</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Armagnac complexe aux arômes de pruneau, d'orange confite, d'épices et de vanille.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wine-item">
+                            <div class="wine-name">
+                                <h4>Poire Williams</h4>
+                                <span class="wine-domain">Distillerie Rochelt</span>
+                            </div>
+                            <div class="wine-price">
+                                <span>12€ (verre)</span>
+                            </div>
+                            <div class="wine-description">
+                                <p>Une eau-de-vie de poire d'une grande pureté, aux arômes intenses et fidèles au fruit frais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Conseil Sommelier -->
+    <section class="sommelier-section section">
+        <div class="container">
+            <div class="sommelier-content">
+                <div class="sommelier-image">
+                    <img src="images/sommelier.jpg" alt="Notre sommelier">
+                </div>
+                <div class="sommelier-text">
+                    <h2>Conseils de notre sommelier</h2>
+                    <div class="separator"></div>
+                    <p>Notre sommelier se fera un plaisir de vous guider dans la découverte de notre cave. N'hésitez pas à lui demander conseil pour l'accord mets-vins parfait, ou pour découvrir de nouveaux domaines et cépages.</p>
+                    <p>Pour les amateurs, nous proposons également des dégustations privées sur réservation, et la possibilité d'acheter certaines bouteilles à emporter.</p>
+                    <blockquote class="sommelier-quote">
+                        <p>"Le vin est l'expression d'un terroir, d'un millésime et du savoir-faire d'un vigneron. Chaque bouteille raconte une histoire unique."</p>
+                    </blockquote>
+                    <a href="contact.html" class="btn-primary">Nous contacter pour plus d'informations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Le Porc Marly</h3>
+                    <p>Bouchon Lyonnais &amp; Bar à Vin</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="cave.html">Notre Cave</a></li>
+                        <li><a href="gallerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 13, rue de Paris, 78560 Le Port-Marly</p>
+                    <p><i class="fas fa-phone-alt"></i> 01.79.35.72.00</p>
+                    <p><i class="fas fa-envelope"></i> contact@leporcmarly.fr</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Le Porc Marly - Tous droits réservés</p>
+                <p>Conception : Votre Agence Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
