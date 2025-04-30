@@ -19,7 +19,7 @@ Ce projet est un site web multipage pour le restaurant "Le Porc Marly", un bouch
 ├── index.html               # Page d'accueil
 ├── menu.html                # Page de menu
 ├── cave.html                # Page de la cave à vin
-├── gallerie.html            # Galerie de photos
+├── galerie.html            # Galerie de photos
 ├── contact.html             # Page de contact
 ├── reservation.html         # Page de réservation
 ├── about.html               # Page à propos
