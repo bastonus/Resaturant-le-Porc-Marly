@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Le Porc Marly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f5029231c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Le Porc Marly</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="cave.html">Notre Cave</a>
+                <a href="gallerie.html">Galerie</a>
+                <a href="contact.html">Contact</a>
+                <a href="reservation.html" class="btn-reservation active">Réserver</a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- En-tête de page -->
+    <header class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Réservation</h1>
+            <p>Réservez votre table en quelques clics</p>
+        </div>
+    </header>
+    
+    <!-- Formulaire de réservation -->
+    <section class="reservation-section section">
+        <div class="container">
+            <div class="reservation-grid">
+                <!-- Formulaire -->
+                <div class="reservation-form-container">
+                    <div class="section-header">
+                        <h2>Réserver une table</h2>
+                        <div class="separator"></div>
+                        <p>Complétez le formulaire ci-dessous pour réserver votre table</p>
+                    </div>
+                    
+                    <form class="reservation-form" action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone*</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date*</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Heure*</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Choisir une heure</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Nombre de personnes*</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Nombre de convives</option>
+                                    <option value="1">1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5">5 personnes</option>
+                                    <option value="6">6 personnes</option>
+                                    <option value="7">7 personnes</option>
+                                    <option value="8">8 personnes</option>
+                                    <option value="more">Plus de 8 personnes</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="occasion">Occasion (optionnel)</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="" selected>Choisir une occasion</option>
+                                    <option value="birthday">Anniversaire</option>
+                                    <option value="anniversary">Anniversaire de mariage</option>
+                                    <option value="business">Repas d'affaires</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special-requests">Demandes particulières</label>
+                            <textarea id="special-requests" name="special-requests" rows="4" placeholder="Allergies, restrictions alimentaires, placement préféré..."></textarea>
+                        </div>
+                        
+                        <div class="form-group consent-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">J'accepte que mes données soient utilisées pour traiter ma demande de réservation.*</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Réserver maintenant</button>
+                    </form>
+                </div>
+                
+                <!-- Informations de réservation -->
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horaires d'ouverture</h3>
+                        <ul class="hours-list">
+                            <li><span>Lundi - Mardi</span> <span>Fermé</span></li>
+                            <li><span>Mercredi - Samedi</span> <span>12h - 15h / 18h - 00h</span></li>
+                            <li><span>Dimanche</span> <span>12h - 22h30</span></li>
+                            <li class="note">Dernier service le midi à 14h30, le soir à 22h30</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Informations importantes</h3>
+                        <ul class="info-list">
+                            <li>Les réservations sont maintenues pendant 15 minutes après l'heure prévue</li>
+                            <li>Pour les groupes de plus de 8 personnes, veuillez nous contacter par téléphone</li>
+                            <li>Annulation gratuite jusqu'à 24h avant la réservation</li>
+                            <li>Pour les événements privés, contactez-nous directement</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Réservation par téléphone</h3>
+                        <p>Pour une réservation immédiate ou des demandes spéciales, appelez-nous :</p>
+                        <p class="phone-number">01.79.35.72.00</p>
+                        <p class="note">Du mercredi au dimanche, de 10h à 22h30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Témoignages clients -->
+    <section class="testimonials-section section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que nos clients disent</h2>
+                <div class="separator"></div>
+                <p>Découvrez l'expérience de nos clients</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Une expérience gastronomique exceptionnelle ! Les plats étaient parfaitement exécutés, le service attentionné et l'ambiance chaleureuse. La cave à vin est impressionnante, avec d'excellentes recommandations du sommelier."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Jean Dupont</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Le Tablier de Sapeur était absolument délicieux, authentique cuisine lyonnaise. Le personnel est très accueillant et connaît parfaitement les plats et les vins. Une vraie découverte que nous recommandons vivement !"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Sophie Martin</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Nous avons fêté notre anniversaire de mariage au Porc Marly et tout était parfait. L'équipe a été aux petits soins et nous a préparé une table spéciale. Les plats traditionnels sont savoureux et copieux, un vrai régal !"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Pierre et Marie Leclerc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Le Porc Marly</h3>
+                    <p>Bouchon Lyonnais &amp; Bar à Vin</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="cave.html">Notre Cave</a></li>
+                        <li><a href="gallerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 13, rue de Paris, 78560 Le Port-Marly</p>
+                    <p><i class="fas fa-phone-alt"></i> 01.79.35.72.00</p>
+                    <p><i class="fas fa-envelope"></i> contact@leporcmarly.fr</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Le Porc Marly - Tous droits réservés</p>
+                <p>Conception : Votre Agence Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
