@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Le Porc Marly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f5029231c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Le Porc Marly</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="cave.html">Notre Cave</a>
+                <a href="gallerie.html" class="active">Galerie</a>
+                <a href="contact.html">Contact</a>
+                <a href="reservation.html" class="btn-reservation">Réserver</a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- En-tête de page -->
+    <header class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Galerie Photos</h1>
+            <p>Découvrez l'ambiance de notre établissement en images</p>
+        </div>
+    </header>
+    
+    <!-- Galerie Photos -->
+    <section class="gallery-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Restaurant</h2>
+                <div class="separator"></div>
+                <p>Une atmosphère chaleureuse et authentique</p>
+            </div>
+            
+            <!-- Filtres de galerie -->
+            <div class="gallery-filters">
+                <button class="gallery-filter active" data-filter="all">Tous</button>
+                <button class="gallery-filter" data-filter="restaurant">Restaurant</button>
+                <button class="gallery-filter" data-filter="plats">Plats</button>
+                <button class="gallery-filter" data-filter="vins">Vins</button>
+            </div>
+            
+            <!-- Grille de photos -->
+            <div class="gallery-grid">
+                <div class="gallery-item restaurant">
+                    <img src="images/restaurant_front.jpg" alt="Façade du restaurant">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Notre Façade</h3>
+                            <p>Bienvenue au Porc Marly</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item restaurant">
+                    <img src="images/restaurant_interior.jpg" alt="Intérieur du restaurant">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Salle Principale</h3>
+                            <p>Une ambiance chaleureuse</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item vins">
+                    <img src="images/wine_bar.jpg" alt="Bar à vin">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Notre Bar à Vin</h3>
+                            <p>Plus de 200 références</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item plats">
+                    <img src="images/tablier_de_sapeur.jpg" alt="Tablier de sapeur">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Tablier de Sapeur</h3>
+                            <p>Spécialité lyonnaise</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item plats">
+                    <img src="images/andouillette.jpg" alt="Andouillette Bobosse">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Andouillette Bobosse</h3>
+                            <p>Grillée à point</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item plats">
+                    <img src="images/fraise_de_veau.jpg" alt="Fraise de veau">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Fraise de Veau</h3>
+                            <p>Un délice traditionnel</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item plats">
+                    <img src="images/creme_brulee.jpg" alt="Crème brûlée">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Crème Brûlée à la Chartreuse</h3>
+                            <p>Notre dessert signature</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item vins">
+                    <img src="images/wine_cellar.jpg" alt="Cave à vin">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Notre Cave</h3>
+                            <p>Sélection de grands crus</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item restaurant">
+                    <img src="images/sommelier.jpg" alt="Notre sommelier">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Notre Sommelier</h3>
+                            <p>Expert en vins de Bourgogne</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item plats">
+                    <img src="images/plat_lyonnais.jpg" alt="Plat lyonnais">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Cuisine Lyonnaise</h3>
+                            <p>Traditions et saveurs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item restaurant">
+                    <img src="images/restaurant_table.jpg" alt="Table dressée">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Table Dressée</h3>
+                            <p>Prête pour votre arrivée</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Réservation -->
+    <section class="cta-reservation section bg-dark">
+        <div class="container text-center">
+            <h2>Envie de découvrir notre restaurant ?</h2>
+            <p>Réservez votre table dès maintenant pour vivre une expérience culinaire authentique.</p>
+            <a href="reservation.html" class="btn-primary">Réserver une table</a>
+        </div>
+    </section>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Le Porc Marly</h3>
+                    <p>Bouchon Lyonnais &amp; Bar à Vin</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="cave.html">Notre Cave</a></li>
+                        <li><a href="gallerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 13, rue de Paris, 78560 Le Port-Marly</p>
+                    <p><i class="fas fa-phone-alt"></i> 01.79.35.72.00</p>
+                    <p><i class="fas fa-envelope"></i> contact@leporcmarly.fr</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Le Porc Marly - Tous droits réservés</p>
+                <p>Conception : Votre Agence Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

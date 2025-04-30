@@ -647,4 +647,548 @@ p {
     .info-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    height: 40vh;
+    background: url('../images/restaurant_interior.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 80px;
+}
+
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.page-header h1 {
+    position: relative;
+    z-index: 1;
+    animation: fadeInDown 1.2s;
+}
+
+.page-header p {
+    position: relative;
+    z-index: 1;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    animation: fadeInUp 1.4s;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wine-header {
+    background-image: url('../images/wine_cellar.jpg');
+}
+
+/* ===== TABS ===== */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-medium);
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+}
+
+.tab-btn:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.tab-btn:hover, 
+.tab-btn.active {
+    color: var(--primary-color);
+}
+
+.tab-btn:hover:after, 
+.tab-btn.active:after {
+    width: 70%;
+}
+
+.wine-tabs .tab-btn {
+    margin: 0 5px 10px;
+    border: 1px solid var(--bg-medium);
+    border-radius: var(--border-radius-sm);
+}
+
+.wine-tabs .tab-btn.active {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.wine-content,
+.menu-content {
+    display: none;
+}
+
+.wine-content.active,
+.menu-content.active {
+    display: block;
+    animation: fadeInUp 0.5s;
+}
+
+/* ===== MENU ITEMS ===== */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xs);
+    border-bottom: 1px dotted var(--bg-medium);
+    padding-bottom: var(--spacing-xs);
+}
+
+.menu-item-header h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.price {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.description {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.menu-item.featured {
+    border: 2px solid var(--accent-color);
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: var(--border-radius-sm);
+}
+
+/* ===== DRINKS LIST ===== */
+.menu-drinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.drinks-section {
+    margin-bottom: var(--spacing-md);
+}
+
+.drinks-section h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.drinks-list {
+    list-style: none;
+}
+
+.drinks-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted var(--bg-medium);
+}
+
+.drink-name {
+    font-weight: 500;
+}
+
+.drink-price {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.drinks-note {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+/* ===== FORMULE CARDS ===== */
+.formule-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.formule-card {
+    text-align: center;
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid var(--primary-color);
+}
+
+.formule-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.formule-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+.price-tag {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-family: var(--font-heading);
+}
+
+.formule-card ul {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.formule-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.formule-card li span {
+    font-style: italic;
+    color: var(--text-medium);
+    font-size: 0.9em;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--spacing-lg);
+}
+
+.contact-form-container {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-group {
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-sm);
+    background-color: #f9f9f9;
+    font-family: var(--font-body);
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.1);
+}
+
+.consent-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.consent-group input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.consent-group label {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+}
+
+/* ===== FAQ SECTION ===== */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    margin-bottom: var(--spacing-sm);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    padding: var(--spacing-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background-color: rgba(139, 69, 19, 0.05);
+}
+
+.faq-question h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.faq-icon {
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.faq-answer {
+    padding: 0 var(--spacing-sm);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-question {
+    background-color: rgba(139, 69, 19, 0.05);
+}
+
+.faq-item.active .faq-icon i {
+    transform: rotate(45deg);
+}
+
+/* ===== MAP SECTION ===== */
+.map-section {
+    height: 450px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== HOURS LIST ===== */
+.hours-list {
+    margin-top: 10px;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.hours-list li.note {
+    justify-content: center;
+    font-style: italic;
+    font-size: 0.9em;
+    color: var(--accent-color);
+    margin-top: 10px;
+}
+
+/* Social Contact */
+.social-contact {
+    margin-top: var(--spacing-md);
+}
+
+.social-contact h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.note {
+    font-size: 0.9em;
+    color: var(--text-medium);
+    margin-top: 8px;
+}
+
+/* ===== SOMMELIER SECTION ===== */
+.sommelier-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.sommelier-quote {
+    font-style: italic;
+    color: var(--secondary-color);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.wine-region {
+    margin-bottom: var(--spacing-lg);
+}
+
+.wine-region h3 {
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 8px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.wine-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.wine-item {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-sm);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.wine-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wine-name {
+    margin-bottom: var(--spacing-xs);
+}
+
+.wine-name h4 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 2px;
+}
+
+.wine-domain {
+    font-style: italic;
+    color: var(--text-medium);
+    font-size: 0.9rem;
+}
+
+.wine-price {
+    margin: var(--spacing-xs) 0;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.wine-description p {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sommelier-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .sommelier-image {
+        order: -1;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .wine-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
 } 
