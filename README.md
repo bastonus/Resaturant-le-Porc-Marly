@@ -1,94 +1,80 @@
-# Site Web du Restaurant Le Porc Marly
+# Le Porc Marly - Site Web Redesign
 
-Ce projet est un site web multipage pour le restaurant "Le Porc Marly", un bouchon lyonnais et bar à vin situé au Port-Marly, en France.
+Ce projet est un redesign du site web pour le restaurant "Le Porc Marly", un bouchon lyonnais situé au Port-Marly. Le style a été inspiré par le site des Bouchons Lyonnais (https://lesbouchonslyonnais.org/).
 
-## Caractéristiques du site
+## Modifications apportées
 
-- Design moderne et élégant avec typographie soignée
-- Site entièrement responsive, compatible avec tous les appareils
-- Animation et interactions utilisateur fluides
-- Formulaires de contact et de réservation
-- Présentation complète du menu et de la carte des vins
-- Galerie d'images
-- Intégration de Google Maps
+### Couleurs
+- Palette de couleurs redessinée pour correspondre aux Bouchons Lyonnais :
+  - Rouge brique comme couleur principale
+  - Rouge bordeaux plus foncé comme couleur secondaire
+  - Jaune doré comme couleur d'accent
+  - Fond blanc et gris clair pour une meilleure lisibilité
 
-## Structure du projet
+### Typographie
+- Polices modifiées pour un style plus classique :
+  - Georgia pour les titres
+  - Arial pour le corps du texte
+- Titres en majuscules avec un espacement de lettres accru
+- Lettrage plus espacé pour une meilleure lisibilité
 
-```
-.
-├── index.html               # Page d'accueil
-├── menu.html                # Page de menu
-├── cave.html                # Page de la cave à vin
-├── galerie.html            # Galerie de photos
-├── contact.html             # Page de contact
-├── reservation.html         # Page de réservation
-├── about.html               # Page à propos
-├── css/
-│   └── style.css            # Feuille de style principale
-├── js/
-│   └── main.js              # Scripts JavaScript
-├── images/                  # Dossier contenant les images du site
-└── README.md                # Ce fichier
-```
+### Navigation
+- Navigation simplifiée avec un menu plus clair
+- Ajout de l'élément "Le Bouchon" à la navigation
+- Bouton de réservation plus proéminent
+
+### Sections
+- En-tête de page (header) simplifié et plus impactant
+- Cartes de spécialités avec bordures simples plutôt que des ombres
+- Style des menus adapté pour correspondre au modèle des Bouchons Lyonnais
+- Section d'équipe redessinée avec un style plus épuré
+
+### Pied de page
+- Pied de page (footer) adapté au style des Bouchons Lyonnais
+- Modification de la signature en bas de page
+
+## Pages modifiées
+- index.html - Page d'accueil
+- about.html - Renommée "Le Bouchon"
+- menu.html - Menu du restaurant
+- style.css - Feuille de style principale
 
 ## Technologies utilisées
-
 - HTML5
-- CSS3 (avec variables CSS et Flexbox/Grid)
-- JavaScript (ES6+)
-- Font Awesome pour les icônes
-- Google Fonts pour la typographie
-- Google Maps pour la carte
+- CSS3
+- JavaScript (pour les interactions)
+- Font Awesome (pour les icônes)
 
-## Polices utilisées
+## Installation
+1. Clonez ce dépôt
+2. Ouvrez index.html dans votre navigateur
 
-- Playfair Display pour les titres
-- Poppins pour le texte
+## À propos du restaurant
+Le Porc Marly est un authentique bouchon lyonnais qui propose une cuisine traditionnelle dans l'esprit des établissements de la capitale gastronomique française.
 
-## Palette de couleurs
+## Structure du site
 
-- Couleur primaire: #8B4513 (Marron)
-- Couleur secondaire: #A52A2A (Rouge bordeaux)
-- Accent: #FFD700 (Or/jaune)
-- Fond clair: #F8F5F0 (Beige clair)
-- Fond moyen: #E6DFD5 (Beige moyen)
-- Fond foncé: #2C2418 (Marron foncé)
+Le site est composé des pages suivantes :
+- `index.html` - Page d'accueil
+- `menu.html` - Page de menu
+- `cave.html` - Page de la cave à vin
+- `galerie.html` - Galerie de photos
+- `contact.html` - Page de contact
+- `reservation.html` - Page de réservation
+- `about.html` - Page à propos du restaurant
 
-## Installation et utilisation
+## Fonctionnalités
 
-1. Clonez ce dépôt sur votre machine locale:
-   ```
-   git clone https://github.com/votre-utilisateur/le-porc-marly.git
-   ```
+- Navigation responsive avec menu burger mobile
+- Galerie de photos avec filtres
+- Formulaire de réservation
+- Formulaire de contact
+- Intégration de Google Maps
+- FAQ interactive
+- Témoignages clients
 
-2. Ouvrez le fichier `index.html` dans votre navigateur pour visualiser le site.
+## Contact
 
-3. Pour le développement, vous pouvez utiliser un serveur local comme Live Server de VSCode ou tout autre serveur HTTP local.
-
-## Téléchargement des images
-
-Un script Python `download_images.py` est inclus pour télécharger des images pour le site. Pour l'utiliser:
-
-1. Assurez-vous d'avoir Python installé sur votre machine
-2. Installez les dépendances nécessaires:
-   ```
-   pip install requests beautifulsoup4
-   ```
-3. Exécutez le script:
-   ```
-   python download_images.py
-   ```
-
-Les images seront téléchargées dans le dossier `images/`.
-
-## Déploiement
-
-Le site peut être déployé sur n'importe quel hébergement web statique (GitHub Pages, Netlify, Vercel, etc.).
-
-## Auteur
-
-Ce site a été créé pour Le Porc Marly par [Votre Nom/Agence].
-
-## Licence
-
-Tous droits réservés © 2025 Le Porc Marly 
+Pour toute question concernant ce site, veuillez contacter :
+- Email : contact@leporcmarly.fr
+- Téléphone : 01.79.35.72.00 
