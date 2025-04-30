@@ -34,30 +34,9 @@ function initMobileNav() {
     
     if (!menuBtn || !navLinks) return;
     
-    // Créer les éléments d'icône pour permettre une meilleure animation
-    if (menuBtn.querySelector('i')) {
-        const existingIcon = menuBtn.querySelector('i');
-        const iconClasses = existingIcon.className.split(' ');
-        
-        // Remplacer l'icône unique par deux icônes pour l'animation
-        menuBtn.innerHTML = `
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
-        `;
-    }
-    
     // S'assurer que le menu soit fermé par défaut en mobile
     if (window.innerWidth <= 768) {
         navLinks.classList.remove('active');
-        
-        // S'assurer que l'icône est correcte
-        const barsIcon = menuBtn.querySelector('.fa-bars');
-        const timesIcon = menuBtn.querySelector('.fa-times');
-        
-        if (barsIcon && timesIcon) {
-            barsIcon.style.opacity = '1';
-            timesIcon.style.opacity = '0';
-        }
     }
     
     menuBtn.addEventListener('click', function(e) {

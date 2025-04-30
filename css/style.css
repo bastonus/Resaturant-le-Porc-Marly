@@ -707,23 +707,19 @@ p {
     
     .menu-btn .fa-bars,
     .menu-btn .fa-times {
-        position: absolute;
-        transition: all 0.4s ease;
+        display: none;
     }
     
     .menu-btn .fa-times {
-        opacity: 0;
-        transform: rotate(-180deg);
+        display: none;
     }
     
     .menu-btn.active .fa-bars {
-        opacity: 0;
-        transform: rotate(180deg);
+        display: none;
     }
     
     .menu-btn.active .fa-times {
-        opacity: 1;
-        transform: rotate(0);
+        display: none;
     }
     
     .hero h1 {
