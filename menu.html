@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Le Porc Marly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f5029231c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Le Porc Marly</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="cave.html">Notre Cave</a>
+                <a href="gallerie.html">Galerie</a>
+                <a href="contact.html">Contact</a>
+                <a href="reservation.html" class="btn-reservation">Réserver</a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- En-tête de page -->
+    <header class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Notre Menu</h1>
+            <p>Une cuisine lyonnaise authentique et généreuse</p>
+        </div>
+    </header>
+    
+    <!-- Menu Tabs -->
+    <section class="menu-tabs section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-id="entrees">Entrées</button>
+                <button class="tab-btn" data-id="plats">Plats</button>
+                <button class="tab-btn" data-id="desserts">Desserts</button>
+                <button class="tab-btn" data-id="boissons">Boissons</button>
+            </div>
+            
+            <!-- Entrées -->
+            <div class="menu-content active" id="entrees">
+                <div class="section-header">
+                    <h2>Entrées</h2>
+                    <div class="separator"></div>
+                    <p>Pour commencer votre voyage culinaire</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Saucisson Brioché</h3>
+                            <span class="price">15€</span>
+                        </div>
+                        <p class="description">Saucisson pistaché enrobé d'une pâte à brioche moelleuse, servi avec une sauce au Porto et salade verte.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Œufs en Meurette</h3>
+                            <span class="price">12€</span>
+                        </div>
+                        <p class="description">Œufs pochés dans une sauce au vin rouge parfumée aux lardons, champignons et oignons grelots.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Salade Lyonnaise</h3>
+                            <span class="price">14€</span>
+                        </div>
+                        <p class="description">Laitue, lardons croustillants, croûtons à l'ail, œuf poché et vinaigrette à la moutarde à l'ancienne.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Terrine de Campagne Maison</h3>
+                            <span class="price">13€</span>
+                        </div>
+                        <p class="description">Terrine de porc aux noisettes et au cognac, servie avec des cornichons et du pain de campagne toasté.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Gratinée à l'Oignon</h3>
+                            <span class="price">11€</span>
+                        </div>
+                        <p class="description">Soupe traditionnelle à l'oignon caramélisé, gratiné avec du pain et du fromage Comté.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Assiette de Charcuterie</h3>
+                            <span class="price">18€</span>
+                        </div>
+                        <p class="description">Sélection de charcuteries artisanales : jambon blanc, jambon cru, rosette, saucisson sec et andouille.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plats -->
+            <div class="menu-content" id="plats">
+                <div class="section-header">
+                    <h2>Plats</h2>
+                    <div class="separator"></div>
+                    <p>Des spécialités lyonnaises authentiques</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tablier de Sapeur</h3>
+                            <span class="price">22€</span>
+                        </div>
+                        <p class="description">Gras-double mariné, pané et frit, servi avec une sauce tartare maison et des pommes sautées.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Andouillette Bobosse</h3>
+                            <span class="price">24€</span>
+                        </div>
+                        <p class="description">Andouillette artisanale 5A grillée, servie avec une sauce moutarde à l'ancienne et gratin dauphinois.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Quenelle de Brochet</h3>
+                            <span class="price">23€</span>
+                        </div>
+                        <p class="description">Quenelle de brochet pochée, nappée d'une sauce Nantua aux écrevisses, accompagnée de riz pilaf.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Fraise de Veau</h3>
+                            <span class="price">26€</span>
+                        </div>
+                        <p class="description">Fraise de veau mijotée aux légumes, accompagnée de pommes vapeur et sauce vinaigrette.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tête de Veau</h3>
+                            <span class="price">25€</span>
+                        </div>
+                        <p class="description">Tête de veau cuite à basse température, sauce ravigote et légumes de saison.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Poulet à la Crème</h3>
+                            <span class="price">24€</span>
+                        </div>
+                        <p class="description">Suprême de poulet fermier, champignons de Paris, sauce à la crème et au vin blanc, gratin dauphinois.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coq au Vin</h3>
+                            <span class="price">27€</span>
+                        </div>
+                        <p class="description">Coq mijoté au vin rouge de Bourgogne, lardons, champignons et petits oignons, servi avec des tagliatelles fraîches.</p>
+                    </div>
+                    
+                    <div class="menu-item featured">
+                        <div class="menu-item-header">
+                            <h3>Cochonnaille du Chef <i class="fas fa-star"></i></h3>
+                            <span class="price">29€</span>
+                        </div>
+                        <p class="description">Assortiment de spécialités porcines : échine confite, joue braisée, saucisse maison et petit pâté en croûte, accompagnés de purée maison.</p>
+                        <span class="badge">Spécialité</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-content" id="desserts">
+                <div class="section-header">
+                    <h2>Desserts</h2>
+                    <div class="separator"></div>
+                    <p>Une touche sucrée pour terminer</p>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crème Brûlée à la Chartreuse</h3>
+                            <span class="price">10€</span>
+                        </div>
+                        <p class="description">Crème brûlée parfumée à la Chartreuse verte, caramélisée au sucre de canne.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crème Brûlée à la Lavande</h3>
+                            <span class="price">10€</span>
+                        </div>
+                        <p class="description">Crème brûlée délicatement parfumée à la lavande de Provence, caramélisée au sucre de canne.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tarte aux Pralines</h3>
+                            <span class="price">9€</span>
+                        </div>
+                        <p class="description">Tarte traditionnelle lyonnaise aux pralines roses, servie tiède avec une boule de glace vanille.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cervelle de Canut</h3>
+                            <span class="price">8€</span>
+                        </div>
+                        <p class="description">Fromage blanc battu avec de la ciboulette, échalote, huile d'olive et vinaigre, servi avec du pain grillé.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Poire Pochée au Vin Rouge</h3>
+                            <span class="price">9€</span>
+                        </div>
+                        <p class="description">Poire pochée dans un sirop au vin rouge, cannelle et vanille, servie avec un sorbet cassis.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Assiette de Fromages</h3>
+                            <span class="price">12€</span>
+                        </div>
+                        <p class="description">Sélection de fromages affinés : Saint-Marcellin, Rigotte de Condrieu, Bleu du Vercors et Comté.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Boissons -->
+            <div class="menu-content" id="boissons">
+                <div class="section-header">
+                    <h2>Boissons</h2>
+                    <div class="separator"></div>
+                    <p>Pour accompagner votre repas</p>
+                </div>
+                
+                <div class="menu-drinks">
+                    <div class="drinks-section">
+                        <h3>Apéritifs</h3>
+                        <ul class="drinks-list">
+                            <li>
+                                <span class="drink-name">Kir</span>
+                                <span class="drink-price">6€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Kir Royal</span>
+                                <span class="drink-price">12€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Communard (Kir au vin rouge)</span>
+                                <span class="drink-price">7€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Pastis</span>
+                                <span class="drink-price">5€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Martini (Blanc ou Rouge)</span>
+                                <span class="drink-price">6€</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="drinks-section">
+                        <h3>Vins au Verre</h3>
+                        <ul class="drinks-list">
+                            <li>
+                                <span class="drink-name">Verre de Beaujolais</span>
+                                <span class="drink-price">6€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Verre de Côtes du Rhône</span>
+                                <span class="drink-price">7€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Verre de Bourgogne</span>
+                                <span class="drink-price">8€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Verre de Mâcon-Villages</span>
+                                <span class="drink-price">7€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Verre de Sancerre</span>
+                                <span class="drink-price">9€</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="drinks-section">
+                        <h3>Digestifs</h3>
+                        <ul class="drinks-list">
+                            <li>
+                                <span class="drink-name">Chartreuse Verte</span>
+                                <span class="drink-price">10€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Chartreuse Jaune</span>
+                                <span class="drink-price">10€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Poire Williams</span>
+                                <span class="drink-price">8€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Cognac</span>
+                                <span class="drink-price">9€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Armagnac</span>
+                                <span class="drink-price">9€</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="drinks-section">
+                        <h3>Softs</h3>
+                        <ul class="drinks-list">
+                            <li>
+                                <span class="drink-name">Eau minérale (50cl)</span>
+                                <span class="drink-price">4€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Eau gazeuse (50cl)</span>
+                                <span class="drink-price">4€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Jus de fruits</span>
+                                <span class="drink-price">5€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Sodas</span>
+                                <span class="drink-price">4€</span>
+                            </li>
+                            <li>
+                                <span class="drink-name">Café</span>
+                                <span class="drink-price">3€</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="drinks-note">
+                    <p>Pour découvrir notre sélection complète de vins, consultez <a href="cave.html" class="btn-text">notre carte des vins <i class="fas fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Formules du Midi -->
+    <section class="lunch-menu section bg-medium">
+        <div class="container">
+            <div class="section-header">
+                <h2>Formules du Midi</h2>
+                <div class="separator"></div>
+                <p>Du mercredi au vendredi, de 12h à 14h30</p>
+            </div>
+            
+            <div class="formule-cards">
+                <div class="formule-card">
+                    <h3>Formule Express</h3>
+                    <div class="price-tag">19€</div>
+                    <ul>
+                        <li>Entrée du jour <span>ou</span> Soupe du jour</li>
+                        <li>Plat du jour</li>
+                        <li>Café</li>
+                    </ul>
+                </div>
+                
+                <div class="formule-card">
+                    <h3>Formule Complète</h3>
+                    <div class="price-tag">25€</div>
+                    <ul>
+                        <li>Entrée du jour</li>
+                        <li>Plat du jour</li>
+                        <li>Dessert du jour <span>ou</span> Café gourmand</li>
+                    </ul>
+                </div>
+                
+                <div class="formule-card">
+                    <h3>Menu Dégustation</h3>
+                    <div class="price-tag">35€</div>
+                    <ul>
+                        <li>Mise en bouche</li>
+                        <li>Entrée au choix</li>
+                        <li>Plat au choix</li>
+                        <li>Dessert au choix</li>
+                        <li>Café ou thé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Réservation -->
+    <section class="cta-reservation section bg-dark">
+        <div class="container text-center">
+            <h2>Envie de déguster nos spécialités ?</h2>
+            <p>Réservez votre table dès maintenant pour vivre une expérience culinaire authentique.</p>
+            <a href="reservation.html" class="btn-primary">Réserver une table</a>
+        </div>
+    </section>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Le Porc Marly</h3>
+                    <p>Bouchon Lyonnais &amp; Bar à Vin</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="cave.html">Notre Cave</a></li>
+                        <li><a href="gallerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 13, rue de Paris, 78560 Le Port-Marly</p>
+                    <p><i class="fas fa-phone-alt"></i> 01.79.35.72.00</p>
+                    <p><i class="fas fa-envelope"></i> contact@leporcmarly.fr</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Le Porc Marly - Tous droits réservés</p>
+                <p>Conception : Votre Agence Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

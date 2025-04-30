@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Le Porc Marly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f5029231c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Le Porc Marly</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="cave.html">Notre Cave</a>
+                <a href="gallerie.html">Galerie</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="reservation.html" class="btn-reservation">Réserver</a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- En-tête de page -->
+    <header class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Nous sommes à votre écoute</p>
+        </div>
+    </header>
+    
+    <!-- Section de contact -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <div class="section-header">
+                        <h2>Envoyez-nous un message</h2>
+                        <div class="separator"></div>
+                        <p>Une question ? Une demande particulière ? Écrivez-nous !</p>
+                    </div>
+                    
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Nom*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Choisissez un sujet</option>
+                                <option value="reservation">Réservation</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="event">Organisation d'événement</option>
+                                <option value="feedback">Commentaire / Avis</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group consent-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">J'accepte que mes données soient utilisées pour traiter ma demande.*</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+                
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Adresse</h3>
+                        <p>13, rue de Paris<br>78560 Le Port-Marly<br>France</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Téléphone</h3>
+                        <p>01.79.35.72.00</p>
+                        <p class="note">Pour les réservations, merci de nous contacter par téléphone ou via notre <a href="reservation.html">formulaire de réservation</a>.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>contact@leporcmarly.fr</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horaires d'ouverture</h3>
+                        <ul class="hours-list">
+                            <li><span>Lundi - Mardi</span> <span>Fermé</span></li>
+                            <li><span>Mercredi - Samedi</span> <span>12h - 15h / 18h - 00h</span></li>
+                            <li><span>Dimanche</span> <span>12h - 22h30</span></li>
+                            <li class="note">Dernier service le midi à 14h30, le soir à 22h30</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Google Maps -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3186620326723!2d2.1118468156745284!3d48.87140587929007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6637d90a86ec5%3A0x13ce77abf21f8a8!2s13%20Rue%20de%20Paris%2C%2078560%20Le%20Port-Marly!5e0!3m2!1sfr!2sfr!4v1650000000000!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <!-- Section FAQ -->
+    <section class="faq-section section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions fréquentes</h2>
+                <div class="separator"></div>
+                <p>Tout ce que vous devez savoir avant votre visite</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Faut-il réserver à l'avance ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous vous recommandons vivement de réserver, surtout le week-end et pour les groupes. Vous pouvez réserver par téléphone ou via notre formulaire de réservation en ligne.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des options végétariennes ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bien que notre cuisine soit traditionnellement axée sur les spécialités lyonnaises à base de viande, nous proposons quelques options végétariennes. N'hésitez pas à nous indiquer vos préférences alimentaires lors de votre réservation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Peut-on privatiser le restaurant pour un événement ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, Le Porc Marly peut être privatisé pour vos événements professionnels ou personnels (mariage, anniversaire, séminaire...). Contactez-nous pour discuter de vos besoins spécifiques et obtenir un devis personnalisé.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Y a-t-il un parking à proximité ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, vous trouverez du stationnement gratuit à proximité du restaurant. Une petite place publique se situe à 100 mètres du restaurant, et un parking un peu plus important est disponible à 300 mètres.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Acceptez-vous les animaux de compagnie ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les chiens de petite taille et bien éduqués sont acceptés uniquement en terrasse. Les chiens d'assistance sont bien sûr acceptés dans tout l'établissement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment puis-je acheter vos vins pour les emporter ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Notre cave propose une sélection de vins à emporter. Vous pouvez venir les acheter directement au restaurant ou nous contacter à l'avance pour préparer votre commande.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Le Porc Marly</h3>
+                    <p>Bouchon Lyonnais &amp; Bar à Vin</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="cave.html">Notre Cave</a></li>
+                        <li><a href="gallerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 13, rue de Paris, 78560 Le Port-Marly</p>
+                    <p><i class="fas fa-phone-alt"></i> 01.79.35.72.00</p>
+                    <p><i class="fas fa-envelope"></i> contact@leporcmarly.fr</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Le Porc Marly - Tous droits réservés</p>
+                <p>Conception : Votre Agence Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
