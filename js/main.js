@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Gestion de la navbar au défilement
     initScrollNavbar();
+    
+    // Gestion du filtrage de la galerie
+    initGalleryFilters();
+    
+    // Animation des compteurs
+    initNumberCounters();
 });
 
 /**
@@ -27,6 +33,18 @@ function initMobileNav() {
     const navLinks = document.querySelector('.nav-links');
     
     if (!menuBtn || !navLinks) return;
+    
+    // S'assurer que le menu soit fermé par défaut en mobile
+    if (window.innerWidth <= 768) {
+        navLinks.classList.remove('active');
+        
+        // S'assurer que l'icône est correcte
+        const icon = menuBtn.querySelector('i');
+        if (icon) {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    }
     
     menuBtn.addEventListener('click', function() {
         navLinks.classList.toggle('active');
@@ -58,6 +76,37 @@ function initMobileNav() {
                 icon.classList.add('fa-bars');
             }
         });
+    });
+    
+    // Fermer le menu quand on clique en dehors
+    document.addEventListener('click', function(event) {
+        if (!menuBtn.contains(event.target) && !navLinks.contains(event.target) && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            menuBtn.classList.remove('active');
+            
+            // Réinitialiser l'icône
+            const icon = menuBtn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+    
+    // Gérer le redimensionnement de la fenêtre
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+            // Si on repasse en desktop et que le menu mobile est ouvert, on le ferme
+            navLinks.classList.remove('active');
+            menuBtn.classList.remove('active');
+            
+            // Réinitialiser l'icône
+            const icon = menuBtn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
     });
 }
 
@@ -360,5 +409,45 @@ function initNumberCounters() {
     
     counters.forEach(counter => {
         observer.observe(counter);
+    });
+}
+
+/**
+ * Initialisation du filtrage de la galerie
+ */
+function initGalleryFilters() {
+    const galleryFilters = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    if (galleryFilters.length === 0 || galleryItems.length === 0) return;
+    
+    galleryFilters.forEach(filter => {
+        filter.addEventListener('click', function() {
+            // Enlever la classe active de tous les filtres
+            galleryFilters.forEach(btn => btn.classList.remove('active'));
+            
+            // Ajouter la classe active au filtre cliqué
+            this.classList.add('active');
+            
+            // Récupérer la valeur du filtre
+            const filterValue = this.getAttribute('data-filter');
+            
+            // Filtrer les éléments de la galerie
+            galleryItems.forEach(item => {
+                if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 50);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
     });
 } 
